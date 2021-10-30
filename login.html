@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Caroline Rentals | Login</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="index.html" class="left-header">
+            <div class="logo"></div>
+        </a>
+        <div class="right-header">
+            <a href="login.html" class="button-type1">Login</a>
+            <a href="register.html" class="button-type1">Register</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a href="product.html">Product</a>
+                    <div class="dropdown-content">
+                        <a href="product.html#familycar">Family Car</a>
+                        <a href="product.html#commercialcar">Commercial Car</a>
+                        <a href="product.html#luxurycar">Luxury Car</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <div class="form-component">
+                    <label for="login-email">Email</label>
+                    <input id="login-email" type="text">
+                    <label id="login-email-valid" class="warning"></label> 
+                </div>
+                <div class="form-component">
+                    <label for="login-pass">Password</label>
+                    <input id="login-pass" type="password">
+                    <label id="login-pass-valid" class="warning"></label>
+                </div>
+                <input onclick="login()" type="button" value="Login" class="button-type1">
+                <p>Don't have an account? Register <a href="register.html">here!</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="subscription">
+            <div class="icon-subscription">
+                <a href="https://facebook.com/" target="_blank" class="fb-icon"></a>
+                <a href="https://twitter.com/" target="_blank" class="tw-icon"></a>
+                <a href="https://youtube.com/" target="_blank" class="yt-icon"></a>
+                <a href="https://instagram.com/" target="_blank" class="ig-icon"></a>
+            </div>
+            <div class="newsletter">
+                <p>Subscribe Our Newsletter</p>
+                <input type="text" placeholder="Email..">
+                <div class="button-type2">Subscribe</div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy Copyright 2020 by Matthew Sebastian Wijaya</p>
+        </div>
+    </div>
+
+    <!-- Import JS -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <title>Caroline Rentals | Register</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="index.html" class="left-header">
+            <div class="logo"></div>
+        </a>
+        <div class="right-header">
+            <a href="login.html" class="button-type1">Login</a>
+            <a href="register.html" class="button-type1">Register</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a href="product.html">Product</a>
+                    <div class="dropdown-content">
+                        <a href="product.html#familycar">Family Car</a>
+                        <a href="product.html#commercialcar">Commercial Car</a>
+                        <a href="product.html#luxurycar">Luxury Car</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="register-form">
+            <h2>Register</h2>
+            <form>
+                <div class="form-component">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text">
+                    <label id="name-valid" class="warning"></label> 
+                </div>
+                <div class="form-component">
+                    <label for="register-email">Email:</label>
+                    <input id="register-email" type="text">
+                    <label id="register-email-valid" class="warning"></label>
+                </div>
+                <div class="form-component">
+                    <label for="gender">Gender</label>
+                    <div class="gender">
+                        <label for="male">
+                            <input type="radio" name="gender" id="male" value="male">
+                            Male
+                        </label>
+                        <label for="female">
+                            <input type="radio" name="gender" id="female" value="female">
+                            Female
+                        </label>
+                    </div>
+                    <label id="gender-valid" class="warning"></label>
+                </div>
+                <div class="form-component">
+                    <label for="city"><br>City:<br><br></label>
+                    <select id="city" name="citylist">
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bogor">Bogor</option>
+                        <option value="depok">Depok</option>
+                        <option value="tanggerang">Tanggerang</option>
+                        <option value="bekasi">Bekasi<br></option>
+                    </select>
+                    <label id="city-valid" class="warning"></label>
+                </div>
+                <div class="form-component">
+                    <label for="address">Address</label>
+                    <input id="address" type="text">
+                    <label id="address-valid" class="warning"></label>
+                </div>
+                <div class="form-component">
+                    <label for="register-pass">Password</label>
+                    <input id="register-pass" type="password">
+                    <label id="register-pass-valid" class="warning"></label>
+                </div>
+                <div class="form-component">
+                    <label for="register-conf-pass">Confirm Password</label>
+                    <input id="register-conf-pass" type="password">
+                    <label id="register-conf-pass-valid" class="warning"></label>
+                </div>
+                <input onclick="register()" type="button" value="Register" class="button-type1">
+                <p>Already have account? Login <a href="login.html">here!</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="subscription">
+            <div class="icon-subscription">
+                <a href="https://facebook.com/" target="_blank" class="fb-icon"></a>
+                <a href="https://twitter.com/" target="_blank" class="tw-icon"></a>
+                <a href="https://youtube.com/" target="_blank" class="yt-icon"></a>
+                <a href="https://instagram.com/" target="_blank" class="ig-icon"></a>
+            </div>
+            <div class="newsletter">
+                <p>Subscribe Our Newsletter</p>
+                <input type="text" placeholder="Email..">
+                <div class="button-type2">Subscribe</div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy Copyright 2020 by Matthew Sebastian Wijaya</p>
+        </div>
+    </div>
+
+    <!-- Import JS -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

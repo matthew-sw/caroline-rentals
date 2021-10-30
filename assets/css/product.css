@@ -1,0 +1,139 @@
+/* General Content Setting */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 52px;
+}
+
+/* General Section Setting */
+.container-text h1{
+    margin-bottom: 24px;
+}
+.container-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    gap: 20px 10px;
+}
+
+/* Card */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 25%;
+    height: 300px;
+    gap: 8px;
+    padding: 24px;
+    border: 1px black solid;
+}
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 3px black solid;
+    transition: 0.5s;
+}
+.card-text{
+    margin-bottom: 32px;
+}
+.card-text p{
+    color: #000000;
+    font-weight:550;
+}
+.card-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 160px;
+    height: 160px;
+}
+
+/* Image */
+.avanza{
+    background-image: url('../images/mini-avanza.png');
+}
+.mobilio1{
+    background-image: url('../images/mini-mobilio.png');
+}
+.mobilio2{
+    background-image: url('../images/mini-mobilio2.png');
+}
+.brv{
+    background-image: url('../images/mini-brv.png');
+}
+.sienta{
+    background-image: url('../images/mini-sienta.png');
+}
+.innova{
+    background-image: url('../images/mini-innova.png');
+}
+.fortuner{
+    background-image: url('../images/mini-fortuner.png');
+}
+.carry{
+    background-image: url('../images/mini-carry.png');
+}
+.megacarry{
+    background-image: url('../images/mini-megacarry.png');
+}
+.grandmax{
+    background-image: url('../images/mini-grandmax.png');
+}
+.luxio{
+    background-image: url('../images/mini-luxio.png');
+}
+.hilux1{
+    background-image: url('../images/mini-hilux.png');
+}
+.hilux2{
+    background-image: url('../images/mini-hilux1.png');
+}
+.hiace{
+    background-image: url('../images/mini-hiace.png');
+}
+.camry{
+    background-image: url('../images/mini-camry.png');
+}
+.accord{
+    background-image: url('../images/mini-accord.png');
+}
+.alphard{
+    background-image: url('../images/mini-alphard.png');
+}
+.lexusgs{
+    background-image: url('../images/mini-lexusgs.png');
+}
+.lc{
+    background-image: url('../images/mini-lc.png');
+}
+.lexuslx{
+    background-image: url('../images/mini-lexuslx.png');
+}
+
+/* Responsive */
+@media only screen and (max-width:600px){
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .card-image{
+        width: 100px;
+        height: 100px;
+    }
+}

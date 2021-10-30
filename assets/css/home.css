@@ -1,0 +1,48 @@
+/* Background */
+.background{
+    background-image: url('../images/Alphard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+}
+
+/* Black Filter */
+.black-filter{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Content */
+.components{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    gap: 36px;
+    color: #FFFFFF;
+}
+.components h1, h3{
+    font-weight: bolder;
+}
+.components h3{
+    background-color: #87CDFA;
+}
+span{
+    color: #0000FF;
+}
+
+/* Responsive */
+@media only screen and (min-width:600px){
+    .components h1{
+        font-size: 48px;
+    }
+    .components h3{
+        font-size: 32px;
+    }
+}
